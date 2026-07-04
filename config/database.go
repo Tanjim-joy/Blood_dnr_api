@@ -37,7 +37,7 @@ func parseDatabaseURL(raw string) (user, pass, host, port, name, sslMode string,
 	host = u.Hostname()
 	port = u.Port()
 	if port == "" {
-		port = "3306"
+		port = "21274" // default MySQL port
 	}
 
 	name = strings.TrimPrefix(u.Path, "/")
