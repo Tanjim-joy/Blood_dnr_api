@@ -1,8 +1,6 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS",
-    "command": "go build -o blooddnr main.go"
+    "builder": "NIXPACKS"
   },
   "deploy": {
     "startCommand": "./blooddnr",
