@@ -5,7 +5,7 @@
     "command": "go build -o blooddnr main.go"
   },
   "deploy": {
-    "startCommand": "./blooddnr",
+    "startCommand": "./",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

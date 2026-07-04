@@ -13,8 +13,8 @@ nixPkgs = ["go"]
 cmds = ["go mod download"]
 
 [phases.build]
-cmds = ["go build -o main ./main.go"]
+cmds = ["go build -o blooddnr ./main.go"]
 
 [start]
-cmd = "./main"
+cmd = "./blooddnr"
 '''
