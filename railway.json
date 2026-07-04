@@ -1,10 +1,11 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS"
+    "builder": "NIXPACKS",
+    "command": "go build -o blooddnr main.go"
   },
   "deploy": {
-    "startCommand": "go run main.go",
+    "startCommand": "./blooddnr",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
