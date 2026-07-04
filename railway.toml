@@ -1,0 +1,20 @@
+[build]
+builder = "NIXPACKS"
+
+[nixpacks]
+plan = '''
+[environment]
+GOMODCACHE = "/go/cache"
+
+[phases.setup]
+nixPkgs = ["go"]
+
+[phases.install]
+cmds = ["go mod download"]
+
+[phases.build]
+cmds = ["go build -o main ./main.go"]
+
+[start]
+cmd = "./main"
+'''
