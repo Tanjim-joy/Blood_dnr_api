@@ -43,9 +43,9 @@ func main() {
 	}))
 
 	// Health check
-	r.GET("/api/health", func(c *gin.Context) {
-		c.JSON(200, gin.H{"status": "ok", "service": "blood-donor-api"})
-	})
+	// r.GET("/api/health", func(c *gin.Context) {
+	// 	c.JSON(200, gin.H{"status": "ok", "service": "blood-donor-api"})
+	// })
 
 	api := r.Group("/api")
 	{
